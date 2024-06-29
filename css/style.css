@@ -1,0 +1,249 @@
+/* common css */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --textColorone: #353535;
+    --textColortwo: #FFFFFF;
+    --iconColor: #FFCC00;
+    --gradientone: #FFCC00;
+    --gradienttwo: #FFF5CB;
+    --fontfamilyone: "Poppins", sans-serif;
+    --fontfamilytwo: "PT Sans", sans-serif;
+}
+    
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1108px;
+    margin: auto;
+}
+
+ul,ol{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #F5F5F5;
+}
+/* common css ends */
+/* nav bar starts */
+
+nav .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+nav .logo{
+    width: 30%;
+    
+}
+
+nav .menu{
+    width: 70%;
+    text-align: right;
+    
+    
+}
+
+nav .menu ul li{
+    display: inline-block;
+}
+
+nav .menu ul li a{
+    display: inline-block;
+    text-transform: uppercase;
+    color: var(--textColorone);
+    font-family: "Poppins", sans-serif;
+    padding: 18px 22px 5px;
+    position: relative;
+
+}
+
+nav .menu ul li a::after{
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: var(--textColorone);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.45s;
+}
+
+nav .menu ul li:hover a::after{
+    width: 100%;
+
+}
+/* nav bar ends */
+/* hero starts */
+
+#hero{
+    /* background-color: aquamarine; */
+    position: relative;
+}
+
+#hero .container{
+    /* background-color: #FFCC00; */
+    margin-top: 119px;
+    display: flex;
+    
+    
+}
+
+#hero .container .herocontent{
+    /* background-color: yellow; */
+    width: 50%;
+}
+
+#hero .container .backgroundpic{
+    width: 50%;
+}
+
+#hero .herocontent h5{
+    font-weight: 400;
+    font-size: 24px;
+    font-family: var(--fontfamilyone);
+    color: var(--textColorone);
+    margin-right: 19px;
+    /* background-color: antiquewhite; */
+    width: 300px;
+    margin-bottom: 19px;
+}
+
+#hero .herocontent h1{
+    font-weight: 800;
+    font-size: 64px;
+    color: var(--textColorone);
+    font-family: var(--fontfamilytwo);
+    margin-bottom: 37px;
+}
+
+#hero .herocontent p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 180%;
+    color: var(--textColorone);
+    font-family: var(--fontfamilyone);
+}
+
+#hero .herocontent a.buttonone{
+    display: inline-block;
+    background-color: var(--iconColor);
+    width: 209px;
+    height: 69px;
+    text-align: center;
+    font-family: var(--fontfamilyone);
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--textColortwo);
+    line-height: 60px;
+    border-radius: 20px;
+    margin-right: 40px;
+    margin-top: 45px;
+    
+}
+
+#hero .herocontent a.buttontwo{
+    display: inline-block;
+    border: 1px solid #000;
+    width: 209px;
+    height: 69px;
+    text-align: center;
+    font-family: var(--fontfamilyone);
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--textColorone);
+    line-height: 60px;
+    border-radius: 20px;
+    
+    
+}
+
+
+
+/* hero ends */
+/* mouse starts */
+#mouse .container{
+    display: flex;
+    justify-content: center;
+}
+
+#mouse .container img{
+    margin-top: 11px;
+    
+}
+/* mouse ends */
+/* about me starts */
+
+#aboutme .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: linear-gradient(to right, #FFCC00, #FFF5CB );
+    margin-top: 104px;
+    height: 556px;
+    position: relative;
+}
+#aboutme .backgroundpic2{
+    width: 50%;
+    margin-top: 26px;
+    
+}
+
+#aboutme .aboutcontent{
+    width: 50%;
+    margin-top: 100px;
+    
+    
+    
+}
+
+
+
+#aboutme .aboutcontent h1{
+    color: var(--textColorone);
+    font-family: var(--fontfamilytwo);
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 26px;
+}
+
+#aboutme .aboutcontent p{
+    font-family: var(--fontfamilyone);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 190%;
+    color: var(--textColorone);
+}
+
+#aboutme .aboutcontent a.buttonthree{
+    display: inline-block;
+    font-family: var(--fontfamilyone);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    color: var(--textColorone);
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 17px 44px;
+    margin-top: 45px;
+}
+
+#aboutme .aboutcontent img{
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 75px;
+
+}
+/* about me ends */
